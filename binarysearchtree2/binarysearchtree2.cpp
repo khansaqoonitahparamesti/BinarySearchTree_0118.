@@ -84,4 +84,19 @@ public:
 		}
 	}
 
+	void preoder(Node* ptr)
+	{
+		if (ROOT == NULL)
+		{
+			cout << "tree is empty" << endl;
+			return;
+		}
+		if (ptr != NULL)
+		{
+			cout << ptr->info << "";
+			inorder(ptr->leftchild);
+			inorder(ptr->rightchild);
+		}
+
+	}
 };
